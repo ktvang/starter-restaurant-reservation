@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from "react";
 import { useHistory, useParams } from "react-router-dom";
 import { readReservation, updateReservation } from "../utils/api";
-import ReservationErrors from "./ReservationErrors";
+import ReservationErrors from "./ErrorReservation";
 import ReservationForm from "./ReservationForm";
-import { hasValidDateAndTime } from "./ReservationValidate";
+import { hasValidDateAndTime } from "./ValidateReservation";
 
 export const ReservationEdit = () => {
   const initialReservationState = {
