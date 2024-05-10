@@ -52,6 +52,6 @@
     "node": "20.12.2"
   },
   "dependencies": {
-    "moment": "^2.29.1"
+    "moment": "^2.30.1"
   }
 }
