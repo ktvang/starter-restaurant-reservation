@@ -5,7 +5,7 @@ import { next, previous, today } from "../utils/date-time";
 import { useHistory } from "react-router-dom";
 import ReservationList from "../reservation/ReservationList";
 import TablesList from "../tables/TablesList";
-import moment from "moment";
+import moment from 'moment';
 
 /**
  * Defines the dashboard page.
