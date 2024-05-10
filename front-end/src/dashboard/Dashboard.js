@@ -3,7 +3,7 @@ import { listReservations, listTables, finishTable, updateStatus } from "../util
 import ErrorAlert from "../layout/ErrorAlert";
 import { next, previous, today } from "../utils/date-time";
 import { useHistory } from "react-router-dom";
-import ReservationsList from "../reservation/ReservationsList";
+import ReservationList from "../reservation/ReservationList";
 import TablesList from "../tables/TablesList";
 import moment from "moment";
 
@@ -99,7 +99,7 @@ function Dashboard({ date }) {
           </div>
           <hr></hr>
           <div id="reservations" className="group-col">
-            <ReservationsList
+            <ReservationList
               reservations={reservations}
               filterResults={filterResults}
               cancelHandler={cancelHandler}

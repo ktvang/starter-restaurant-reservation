@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { listReservations, updateStatus } from "../utils/api";
-import ReservationsList from "../reservation/ReservationsList";
+import ReservationList from "../reservation/ReservationList";
 
 export const Search = () => {
   const [reservations, setReservations] = useState([]);
@@ -70,7 +70,7 @@ export const Search = () => {
         </form>
       </div>
       {submitted ? (
-        <ReservationsList
+        <ReservationList
           reservations={reservations}
           filterResults={filterResults}
           cancelHandler={cancelHandler}

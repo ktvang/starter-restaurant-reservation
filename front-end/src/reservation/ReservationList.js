@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-export const ReservationsList = ({
+export const ReservationList = ({
   reservations,
   cancelHandler,
   filterResults,
@@ -103,4 +103,4 @@ export const ReservationsList = ({
   return <div>{renderReservations(reservations)}</div>;
 };
 
-export default ReservationsList;
+export default ReservationList;
