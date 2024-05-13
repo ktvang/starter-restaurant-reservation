@@ -45,6 +45,7 @@ export const ReservationForm = ({
               required={true}
               value={reservation.mobile_number}
               maxLength="100"
+              pattern="[0-9]*"
               onChange={changeHandler}
             />
           </div>
